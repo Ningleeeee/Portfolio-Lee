@@ -1,8 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { fadeIn } from "../utils/motion";
 import { Tag } from "../components";
 
 export function ProjectCard({

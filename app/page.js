@@ -2,7 +2,7 @@
 
 import { Navbar, Footer } from "../components";
 import { Hero, Contact, Projects } from "../sections";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],

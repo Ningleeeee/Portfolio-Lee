@@ -12,15 +12,16 @@ export function Form() {
 
     emailjs
       .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        process.env.API_KET
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
-          console.log("msg sent!");
+
+          alert("Email sent Successfully");
         },
         (error) => {
           console.log(error.text);

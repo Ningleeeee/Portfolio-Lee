@@ -15,7 +15,7 @@ export function Form() {
         process.env.NEXT_PUBLIC_SERVICE_ID,
         process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        "0fThIRMXqJwAYIMHm"
+        process.env.NEXT_PUBLIC_KEY
       )
       .then(
         (result) => {

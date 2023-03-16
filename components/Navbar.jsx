@@ -61,9 +61,8 @@ export function Navbar() {
               <li className="nav-item">
                 <div className="flex flex-end gap-3 pl-[20px] items-baseline ">
                   {socials.map((social) => (
-                    <a href={social.link}>
+                    <a href={social.link} key={social.key}>
                       <img
-                        key={social.key}
                         src={social.url}
                         alt={social.name}
                         className="rounded w-[22px] h-[22px] cursor-pointer hover:bg-[#FBDADA]"

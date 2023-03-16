@@ -35,12 +35,10 @@ export function Form() {
         onSubmit={sendEmail}
         className="flex flex-col justify-center items-center gap-3 py-[15px] border-2 border-[#120A19] rounded-md shadow-lg"
       >
-        <h2 className="text-5xl mx-[4%]  my-auto font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
-          Contact
-        </h2>
+        <h2 className="text-5xl mx-[4%] my-auto font-bold">Contact</h2>
         <hr className="w-[60%] border border-[#120A19]" />
         <div className="w-full flex flex-col justify-center gap-2 px-8">
-          <label for="name" className="p-[1vh]"></label>
+          <label htmlFor="name" className="p-[1vh]"></label>
           <input
             type="text"
             id="name"
@@ -49,7 +47,7 @@ export function Form() {
             className="rounded border-2 border-[#120A19] bg-[#cfdee9]"
           />
 
-          <label for="email" className="p-[1vh]"></label>
+          <label htmlFor="email" className="p-[1vh]"></label>
           <input
             name="user_email"
             type="email"
@@ -58,7 +56,7 @@ export function Form() {
             className="rounded border-2 border-[#120A19] bg-[#cfdee9]"
           />
 
-          <label for="msg" className="p-[1vh]"></label>
+          <label htmlFor="msg" className="p-[1vh]"></label>
           <textarea
             name="message"
             id="msg"

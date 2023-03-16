@@ -13,9 +13,8 @@ export function Contact() {
         </h3>
         <div className="flex gap-6 justify-center items-center sm:pb-[30px]">
           {socials.map((s, index) => (
-            <a href={s.link}>
+            <a href={s.link} key={index}>
               <img
-                key={index}
                 alt={s.name}
                 src={s.url}
                 className="w-[50px] h-[50px] object-contain cursor-pointer fill-black hover:bg-[#fbdada] hover:rounded"

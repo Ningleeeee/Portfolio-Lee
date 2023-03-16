@@ -7,8 +7,15 @@ module.exports = {
     "./sections/**/*.{js,ts,jsx,tsx}",
     "./styles/**/*.{js,jsx}",
   ],
+
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        cream: "#F8EFE4",
+        yellow: "#FAD02C",
+        black: "#282120",
+      },
+    },
   },
   plugins: [],
 };

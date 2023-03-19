@@ -25,6 +25,9 @@ export function Form() {
         },
         (error) => {
           console.log(error.text);
+          alert(
+            "Sorry, there is something went wrong, please send to : lee.ninghsin@gmail.com"
+          );
         }
       );
   };

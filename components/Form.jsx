@@ -20,7 +20,6 @@ export function Form() {
       .then(
         (result) => {
           console.log(result.text);
-
           alert("Email sent Successfully");
         },
         (error) => {
